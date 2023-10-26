@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Greek Yogurt </title>
+    <style>
+       h1{
+       text-align: center;
+       color: #7d51e8
+       } 
+       h2 {
+       text-align: center;
+       border: 1px solid  #7d51e8;
+       padding: 20px;
+       font-size: 20px;
+       border-radius: 4px;
+       }
+
+       img {
+       display: block;
+       margin: 0 auto;
+       margin-top: 30px;
+       max-width: 100%;
+       border-radius: 10px;
+       }
+       p {
+       line-height:1.5;
+       font-size: 20px;
+       margin: 20px 0 10px;
+       }
+       button {
+       display: block;
+       margin: 0 auto;
+       background: #7d51e8;
+       color: white;
+       font-size: 24px;
+       padding: 15px 20px;
+       border: none;
+       border-radius: 6px;
+       box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+       transition: all 200ms ease-in-out;
+
+       }
+       button:hover {
+       opacity: 0.9;
+       cursor: pointer;
+
+       }
+       .container {
+       max-width: 800px;
+       margin: 0 auto;
+       padding: 80px 60px;
+       }
+       .learn-more {
+       
+       
+       color: #7d51e8;
+       text-decoration: none;
+       font-size: 20px; 
+       }
+
+       .learn-more:hover { 
+       text-decoration: underline;}
+       .footer {
+       text-align: center;
+       font-size: 12px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>
+        I love Yogurt
+    </h1>
+    <h2>
+        Especially Greek Yogurt
+    </h2>
+    <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/10/fruit-berries-yogurt-1296x728-header.jpg?w=1155&h=1528" alt="Greek Yogurt"
+    width="500">
+    <p>
+        Well milk is made up of casein and whey. Casein is what curdles and is used to make cheese and yogurt, while whey is the
+        watery substance left when the milk curdles.
+
+    </p>
+    <a
+     href="https://en.wikipedia.org/wiki/Strained_yogurt" 
+     target="_blank" 
+     class="learn-more">
+    
+        Learn more on wikipedia
+    </a>
+   <button class="buy-button">
+    👉 Buy Greek Yogurt
+   </button>
+   <p class="footer"> 
+    This page was built by
+    <a href="https://www.linkedin.com/in/andrii-zborivets-684133294/"target="_blank">
+       Andrii Zborivets
+        </a>
+   </p>
+</div>
+<script>
+    function buy() {
+    let name = prompt("What is your name?");
+    let email = prompt("What is your emeil address?");
+    let emoji = prompt("What is your favorite emoji");
+
+    alert(
+    " Thank you " +
+     name +
+    "! Well be in toch by email, meanwhile have lot of Yogurt! " +
+    emoji
+   );
+    }
+    
+    let buyButton = document.querySelector(".buy-button");
+    buyButton.addEventListener("click",buy);
+</script>
+    
+    
+</body>
+</html>
